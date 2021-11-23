@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow:hidden;
+}
+body{
+    overflow:hidden;
+    min-height: 100vh;
+    display: flex;
+    
+  
+    justify-content: space-between;
+    background: linear-gradient(deeppink,purple);
+    padding: 5.5rem;
+    background-repeat: no-repeat;
+
+
+}
+header{
+    width: 35rem;
+    background: rgba(255, 255, 255, .2);
+    backdrop-filter:blur(.4rem) ;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0,.3);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    
+
+
+}
+header .user{
+    padding-top: 2rem;
+}
+header .user img{
+    margin: 1rem 0;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 0 1rem rgba(255, 255, 255, .2);
+
+
+}
+header .user .name{
+    font-size: 3rem;
+    color: white;
+    padding: .5rem 0;
+}
+header .user .post{
+    font-size: 1.5rem;
+    color: white;
+}
+header .navbar{
+    padding: 3rem 9rem; 
+
+
+}
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    margin: 1rem 0;
+
+}
+header .navbar ul li a{
+    padding: 1rem;
+    color: white;
+    display: block;
+    font-size: 2rem;
+    background:rgba(255, 255, 255, .2) ;
+    box-shadow: 0 1rem 2rem rgba(255, 255, 255, .2);
+    border-radius: 1rem;
+}
+header .navbar ul li a:hover{
+    background: rgba(255, 255, 255, .5);
+    color: #333;
+    transition: none;
+}
+.container{
+   height: 88rem;
+    width: 170rem;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: rgba(255, 255, 255, .5);
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-left: 20px;
+
+}
+.home{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    position: relative;
+    padding-bottom: 10rem;
+}
+.home h3{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: white;
+
+}
+.home .name span{
+    font-size: 4rem;
+    color: white;
+    
+}
+/* .home h3 span{
+    font-size: 4rem;
+    color: white;
+
+} */
+.home .post{
+    padding: 1rem 0;
+}
+
+.home .post span{
+   font-size: 3rem;
+
+
+
+}
+ .btn{
+    font-size: 1rem;
+    padding: .7rem 4rem;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(255, 255, 255, .2);
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: .2s linear;
+
+
+}
+ .btn:hover{
+    background: rgba(255, 255, 255, .5);
+    color: #555;
+} 
+/* .home .btn{
+    padding: 1rem 3rem;
+    margin: 1rem;
+    background: rgba(0, 0, 0,.2);
+    box-shadow:0 1rem 2rem rgba(255, 255, 255, .2);
+    color: white;
+    border-radius: 1rem;
+    font-size: 2rem;
+
+}
+.home .btn:hover{
+    background: rgba(255, 255, 255, .5);
+    color: #333;
+    cursor: pointer;
+} */
+ .home .hello{
+   
+   /* left:50%; bottom:4rem;
+   
+   transform:translateX(-50%); */
+   display: flex;
+   padding: 1rem;
+   border-radius: 1rem;
+   background: rgba(255, 255, 255, .2);
+   box-shadow: 0 1rem 2rem rgba(0, 0, 0,.2);
+   margin-top: 1rem;
+   font-size: 3rem;
+   transition: all .5s linear;
+}
+ .home .hello a{
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0,.2);
+    padding: 1rem 2rem;
+    margin: 1rem;
+    color: white;
+    border-radius: 2rem;
+}  
+.home .hello a:hover{
+    color: #333;
+}
+/* .share{
+    margin: 40px;
+    padding: 1rem;
+    font-size: 4rem;
+    background: rgba(255, 255, 255, .1);
+   box-shadow: 0 1rem 2rem rgba(0, 0, 0,.2);
+   border-radius: 1rem;
+   color: white;
+
+    
+}
+.share:hover{
+    background: black;
+    
+} */
+/* .home .share a{
+    color: brown;
+}
+
+ .home .share a:hover{
+     color: blue;
+ } */
+ 
+ h5{
+     width: 0ch;
+     overflow: hidden;
+     white-space: nowrap;
+     animation: text 6s steps(14) infinite alternate;
+     font-size: 60px;
+     color: white;
+     border-right: 3px solid black;
+
+ }
+ @keyframes text{
+     0%{
+         width:0ch;
+     }
+     50%{
+         width:14ch;
+     }
+ }
+ #hel{
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: names 5s steps(16) infinite alternate;
+    font-size: 50px;
+    color: white;
+    border-right: 3px solid black;
+
+ }
+ @keyframes names{
+    0%{
+        width:0ch;
+    }
+    50%{
+        width:16ch;
+    }
+}
+
+ .boy{
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: bu 4s steps(10) infinite alternate;
+    font-size: 90px;
+    color: white;
+    border-right: 3px solid black;
+ }
+ @keyframes bu{
+    0%{
+        width:0ch;
+    }
+    50%{
+        width:10ch;
+    }
+}
+
+.heading{
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+.about .content h1{
+    font-size: 2.5rem;
+    color: white;
+
+
+}
+.about .content{
+    font-size: 1.5rem;
+    color: white;
+    padding: 5rem 0;
+}
+section{
+    padding: 1rem 7%;
+    min-height: 100%;
+}
+.about .skill{
+    padding: 1rem 0;
+
+}
+.about .skill .progress{
+    margin: 1.5rem 0;
+    padding: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0,.2);
+    background: rgba(255, 255, 255, .2);
+    border-radius: 1rem;
+}
+.about .skill .progress h4{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: white;
+}
+.about .skill .progress .bar{
+    position: relative;
+    width: 100%;
+    height: 1rem;
+    margin: 1rem 0;
+    background: #333;
+    border-radius: 1rem;
+}
+.about .skill .progress .bar span{
+    position: absolute;
+    top: o;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+}
+.about .skill .progress:nth-child(1) .bar span{
+    width: 95%;
+}
+.about .skill .progress:nth-child(2) .bar span{
+    width: 70%;
+}
+.about .skill .progress:nth-child(3) .bar span{
+    width: 30%;
+}
+.about .skill .progress:nth-child(4) .bar span{
+    width: 65%;
+}
+
+.service .box-container{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.service .box-container .box{
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;box-shadow: 0 1rem 2rem rgba(0, 0, 0,.2);
+    background: rgba(255, 255, 255, .2);
+    text-align: center;
+    width: 40rem;
+}
+.service .box-container .box p{
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.service .box-container .box a{
+    font-size: 4.5rem;
+    color: white;
+}
+.service .box-container .box a:hover{
+    color: black;
+}
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color: white;
+    flex-wrap: wrap;
+    padding: 2rem o;
+}
+.education .box-container .box{
+    width: 30rem;
+    padding: 0 2rem;
+    padding-bottom: 4rem;
+    border-left: .2em solid #fff;
+}
+.education .box-container .box .year{
+    font-size: 2rem;
+    position: relative;
+}
+.education .box-container .box .year::before{
+    content: '';
+    position: absolute;
+    top: .3rem; left: -3.1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: white;
+}
+/* .contact .row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7rem;
+}
+.contact .row form{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem 2rem;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0,.2);
+    border-radius: 1rem;
+
+
+} */
+.contact{
+    display: block;
+}
+.containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    
+}
+.containers form{
+    width: 350px;
+    background: rgba(255, 255, 255, .2);
+    padding: 45px 25px;
+    box-shadow: 1rem 2rem 4rem rgba(0, 0, 0,.2);
+    border-radius: 15px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+.containers h1{
+    color: white;
+    font-size: 27px;
+    text-align: center;
+}
+/* .containers a i{
+    width: 40px;
+    height: 40px;
+    background: red;
+    border-radius: 50px;
+} */
+.ico{
+    width: 90px;
+    height: 90px;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 2rem 4rem 3rem rgba(0, 0, 0,.2);
+    border-radius: 50px;
+    position: relative;
+    left: 35%;
+    border: 2px solid black;
+    
+}
+.ico .df{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 20px;
+    font-size: 50px;
+}
+
+.containers form .boxed{
+    height: 40px;
+    width: 100%;
+    border-radius: 50px;
+   padding: 0 20px;
+   margin: 10px 0;
+   font-size: 17px;
+   color: white;
+   background: rgba(255, 255, 255, .2);
+}
+.containers form input[type="submit"]{
+    height: 38px;
+    width: 140px;
+    border-radius: 50px;
+    color: white;
+    background: crimson;
+    font-size: 17px;
+}
+.containers form p{
+    margin: 20px 0;
+    color: #555;
+    
+    font-size: 20px;
+}
+footer{
+    width: 1000px;
+    height: 170px;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    left: 170px;
+    box-shadow: 2rem 3rem 4rem rgba(0, 0, 0,.3);
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    border-radius: 50px;
+}
+footer .address{
+    font-size: 30px;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 1rem 2rem 4rem rgba(255, 255, 255, .1);
+    padding: 20px 20px;
+    position: relative;
+    left: 50px;
+    box-shadow: 2rem 4rem 3rem rgba(0, 0, 0,.3);
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    border-radius: 30px;
+  
+    
+    
+    
+}
+footer .address a{
+    margin: 20px;
+    /* padding: 20px; */
+    background: rgba(255, 255, 255, .5);
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    padding: 10px;
+    transition: all .5s linear;
+    color: white;
+}
+footer .address a:hover{
+    background: black;
+    color: white;
+}
+.g{
+    position: relative;
+    top: 60px;
+    font-size: 20px;
+    left: -250px;
+    color: white;
+
+    
+}
